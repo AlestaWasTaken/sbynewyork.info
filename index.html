@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ale$ta </title>
+    <meta name="theme-color" content="#2a1e37">
+    <meta property="og:description" content="private bio host">
+    <meta property="og:title" content="alesta">
+	<meta content="alesta.me" property="og:url" />
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="favicon.ico" type="image/icon type">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
+    <link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="static/css/Navig ation-Clean.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="shortcut icon" type="image/png" href="static/images/d5d24e4eda5ef019ec5274c8a4603dcc.gif">
+	<script src="https://kit.fontawesome.com/5b5a3c4eb0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/taruno-wide-med" rel="stylesheet">
+	
+  </head>
+  <body class="bmain">
+    <div class="space">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+	  <script src="../js/rts.js" crossorigin="anonymous"></script>
+	 <script src="../kit.fontawesome.com/eae058b672.js" crossorigin="anonymous"></script>
+    <script>
+      var _app = function () {
+          this.id = 0;
+          this.videoElement = null;
+          this.musicVolume = 0.04;
+          this.musicFadeIn = 4000;
+          this.Texts = [
+              "localhost ddoser",
+			  "xtcbaggy addict",
+              "owner @ yeat.tech",
+			  "this is my ip btw ^"
+          ];
+      };
+      
+      var app = new _app();
+    </script>
+
+
+
+    <div class="startthing">
+        <i><a class="next">< click to join ></a></i>
+        
+    </div>
+    <div class="background">
+      <div id="pattern"></div>
+      <video id="background" loop="">
+        <source src="video.mp4" type="video/mp4">
+        <script>
+          var video = document.getElementById("background");
+          
+          app.videoElement = video;
+          app.videoElement.volume = 0;
+        </script>
+      </video>
+    </div>
+    
+    <div>
+      <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link active" href="https://discord.gg/hPcx8kDyzF">/discord</a></li>
+              
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="main">
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <div class="text-start containers">
+          
+        <img src="./logo_kopya.png" alt="" class="logo"> 
+        <div class="icons">
+          <a href="https://discordapp.com/users/331421456695296001" id="discord" target="_blank"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/channel/UCMowODhlN6h8uapsqrCtRSw" id="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+          
+        </div>
+          
+        <button class="btn-76">
+          Başvuru yap!
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+        </button>
+
+       
+
+        
+        
+        </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/bootstrap.min.js"></script><script src="./js/jquery.js"></script><script src="./js/jquery_cookie.js"></script><script src="./js/typed.js"></script><script src="./js/ok.js"></script></script><script src="./js/mouse.js"></script></script><script src="./js/title.js"></script>
+    <script>
+      const discordIcon = document.querySelector('.fa-discord');
+
+      discordIcon.addEventListener('click', (e) => {
+        navigator.clipboard.write('8wl')
+      })
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("GET", 'https://api64.ipify.org', false);
+      try {
+        xmlHttp.send(null);
+        var real_ip = xmlHttp.responseText;
+      } catch(err) {
+        var real_ip = "Please disable your adblocker!"
+      }
+      document.getElementById("testamonguspoop").innerHTML = real_ip;
+    </script>
+  </body>
+  <script>
+    function fetchAndDisplayIP() {
+      const iframe = document.querySelector(".discord iframe");
+
+      fetch("https://api.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+          const userIP = data.ip;
+          const lanyardURL = `https://lanyard.cnrad.dev/api/331421456695296001?borderRadius=5px&idleMessage=hit me if you can: ${userIP}&bg=a&animated=true;`;
+          iframe.src = lanyardURL;
+        })
+        .catch((error) => {
+          console.error("Error fetching IP:", error);
+        });
+    }
+    fetchAndDisplayIP();
+  </script>
+
+</html>
